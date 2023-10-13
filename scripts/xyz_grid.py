@@ -634,7 +634,7 @@ class Script(scripts.Script):
         else:
             total_steps = p.steps * len(xs) * len(ys) * len(zs)
 
-        if isinstance(p, StableDiffusionProcessingTxt2Img) and p.enable_hr:
+        if isinstance(p, SdwProcessingTxt2Img) and p.enable_hr:
             if x_opt.label == "Hires steps":
                 total_steps += sum(xs) * len(ys) * len(zs)
             elif y_opt.label == "Hires steps":
