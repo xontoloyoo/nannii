@@ -336,7 +336,7 @@ class Api:
                         script_args[alwayson_script.args_from + idx] = request.alwayson_scripts[alwayson_script_name]["args"][idx]
         return script_args
 
-    def text2imgapi(self, txt2imgreq: models.StableDiffusionTxt2ImgProcessingAPI):
+    def text2imgapi(self, txt2imgreq: models.SdwTxt2ImgProcessingAPI):
         script_runner = scripts.scripts_txt2img
         if not script_runner.scripts:
             script_runner.initialize_scripts(False)
