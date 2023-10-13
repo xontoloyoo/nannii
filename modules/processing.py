@@ -1343,7 +1343,7 @@ class SdwProcessingTxt2Img(SdwProcessing):
 
 
 @dataclass(repr=False)
-class StableDiffusionProcessingImg2Img(StableDiffusionProcessing):
+class SdwProcessingImg2Img(SdwProcessing):
     init_images: list = None
     resize_mode: int = 0
     denoising_strength: float = 0.75
