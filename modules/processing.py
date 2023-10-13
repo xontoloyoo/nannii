@@ -230,8 +230,8 @@ class SdwProcessing:
             self.seed_resize_from_h = 0
             self.seed_resize_from_w = 0
 
-        self.cached_uc = StableDiffusionProcessing.cached_uc
-        self.cached_c = StableDiffusionProcessing.cached_c
+        self.cached_uc = SdwProcessing.cached_uc
+        self.cached_c = SdwProcessing.cached_c
 
     @property
     def sd_model(self):
