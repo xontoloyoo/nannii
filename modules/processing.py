@@ -376,8 +376,8 @@ class SdwProcessing:
         self.c = None
         self.uc = None
         if not opts.persistent_cond_cache:
-            StableDiffusionProcessing.cached_c = [None, None]
-            StableDiffusionProcessing.cached_uc = [None, None]
+            SdwProcessing.cached_c = [None, None]
+            SdwProcessing.cached_uc = [None, None]
 
     def get_token_merging_ratio(self, for_hr=False):
         if for_hr:
