@@ -113,7 +113,7 @@ def txt2img_image_conditioning(sd_model, x, width, height):
 
 
 @dataclass(repr=False)
-class StableDiffusionProcessing:
+class SdwProcessing:
     sd_model: object = None
     outpath_samples: str = None
     outpath_grids: str = None
