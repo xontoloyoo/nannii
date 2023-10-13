@@ -124,7 +124,7 @@ def apply_vae(p, x, xs):
     modules.sd_vae.reload_vae_weights(shared.sd_model, vae_file=find_vae(x))
 
 
-def apply_styles(p: StableDiffusionProcessingTxt2Img, x: str, _):
+def apply_styles(p: SdwProcessingTxt2Img, x: str, _):
     p.styles.extend(x.split(','))
 
 
