@@ -22,7 +22,7 @@ parser.add_argument("--do-not-download-clip", action='store_true', help="do not 
 parser.add_argument("--data-dir", type=str, default=os.path.dirname(os.path.dirname(os.path.realpath(__file__))), help="base path where all user data is stored")
 parser.add_argument("--config", type=str, default=sd_default_config, help="path to config which constructs model",)
 parser.add_argument("--ckpt", type=str, default=sd_model_file, help="path to checkpoint of sdw model; if specified, this checkpoint will be added to the list of checkpoints and loaded",)
-parser.add_argument("--ckpt-dir", type=str, default=None, help="Path to directory with stable diffusion checkpoints")
+parser.add_argument("--ckpt-dir", type=str, default=None, help="Path to directory with sdw checkpoints")
 parser.add_argument("--vae-dir", type=str, default=None, help="Path to directory with VAE files")
 parser.add_argument("--gfpgan-dir", type=str, help="GFPGAN directory", default=('./src/gfpgan' if os.path.exists('./src/gfpgan') else './GFPGAN'))
 parser.add_argument("--gfpgan-model", type=str, help="GFPGAN model file name", default=None)
