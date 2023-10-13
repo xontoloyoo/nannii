@@ -204,7 +204,7 @@ class SdwProcessing:
 
     def __post_init__(self):
         if self.sampler_index is not None:
-            print("sampler_index argument for StableDiffusionProcessing does not do anything; use sampler_name", file=sys.stderr)
+            print("sampler_index argument for SdwProcessing does not do anything; use sampler_name", file=sys.stderr)
 
         self.comments = {}
 
