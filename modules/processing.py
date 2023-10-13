@@ -571,7 +571,7 @@ class Processed:
 
         return json.dumps(obj)
 
-    def infotext(self, p: StableDiffusionProcessing, index):
+    def infotext(self, p: SdwProcessing, index):
         return create_infotext(p, self.all_prompts, self.all_seeds, self.all_subseeds, comments=[], position_in_batch=index % self.batch_size, iteration=index // self.batch_size)
 
     def get_token_merging_ratio(self, for_hr=False):
