@@ -113,7 +113,7 @@ SdwTxt2ImgProcessingAPI = PydanticModelGenerator(
 ).generate_model()
 
 SdwImg2ImgProcessingAPI = PydanticModelGenerator(
-    "StableDiffusionProcessingImg2Img",
+    "SdwProcessingImg2Img",
     SdwProcessingImg2Img,
     [
         {"key": "sampler_index", "type": str, "default": "Euler"},
