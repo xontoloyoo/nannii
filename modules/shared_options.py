@@ -149,7 +149,7 @@ options_templates.update(options_section(('sd', "Stable Diffusion"), {
     "hires_fix_refiner_pass": OptionInfo("second pass", "Hires fix: which pass to enable refiner for", gr.Radio, {"choices": ["first pass", "second pass", "both passes"]}, infotext="Hires refiner"),
 }))
 
-options_templates.update(options_section(('sdxl', "Stable Diffusion XL"), {
+options_templates.update(options_section(('sdxl', "sdw XL"), {
     "sdxl_crop_top": OptionInfo(0, "crop top coordinate"),
     "sdxl_crop_left": OptionInfo(0, "crop left coordinate"),
     "sdxl_refiner_low_aesthetic_score": OptionInfo(2.5, "SDXL low aesthetic score", gr.Number).info("used for refiner model negative prompt"),
