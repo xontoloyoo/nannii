@@ -37,7 +37,7 @@ parser.add_argument("--localizations-dir", type=str, default=os.path.join(script
 parser.add_argument("--allow-code", action='store_true', help="allow custom script execution from webui")
 parser.add_argument("--medvram", action='store_true', help="enable stable diffusion model optimizations for sacrificing a little speed for low VRM usage")
 parser.add_argument("--medvram-sdxl", action='store_true', help="enable --medvram optimization just for SDXL models")
-parser.add_argument("--lowvram", action='store_true', help="enable stable diffusion model optimizations for sacrificing a lot of speed for very low VRM usage")
+parser.add_argument("--lowvram", action='store_true', help="enable sdw model optimizations for sacrificing a lot of speed for very low VRM usage")
 parser.add_argument("--lowram", action='store_true', help="load stable diffusion checkpoint weights to VRAM instead of RAM")
 parser.add_argument("--always-batch-cond-uncond", action='store_true', help="does not do anything")
 parser.add_argument("--unload-gfpgan", action='store_true', help="does not do anything.")
