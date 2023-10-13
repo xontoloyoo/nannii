@@ -705,7 +705,7 @@ def create_infotext(p, all_prompts, all_seeds, all_subseeds, comments=None, iter
     return f"{prompt_text}{negative_prompt_text}\n{generation_params_text}".strip()
 
 
-def process_images(p: StableDiffusionProcessing) -> Processed:
+def process_images(p: SdwProcessing) -> Processed:
     if p.scripts is not None:
         p.scripts.before_process(p)
 
