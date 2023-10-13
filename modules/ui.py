@@ -1322,7 +1322,7 @@ def versions_html():
         xformers_version = "N/A"
 
     return f"""
-version: <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui/commit/{commit}">{tag}</a>
+version: <a href="https://github.com/xontoloyoo/sdw/commit/{commit}">{tag}</a>
 &#x2000;•&#x2000;
 python: <span title="{sys.version}">{python_version}</span>
 &#x2000;•&#x2000;
