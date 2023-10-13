@@ -1051,8 +1051,8 @@ class SdwProcessingTxt2Img(SdwProcessing):
             self.width = self.firstphase_width
             self.height = self.firstphase_height
 
-        self.cached_hr_uc = StableDiffusionProcessingTxt2Img.cached_hr_uc
-        self.cached_hr_c = StableDiffusionProcessingTxt2Img.cached_hr_c
+        self.cached_hr_uc = SdwProcessingTxt2Img.cached_hr_uc
+        self.cached_hr_c = SdwProcessingTxt2Img.cached_hr_c
 
     def calculate_target_resolution(self):
         if opts.use_old_hires_fix_width_height and self.applied_old_hires_behavior_to != (self.width, self.height):
