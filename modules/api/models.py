@@ -4,7 +4,7 @@ from pydantic import BaseModel, Field, create_model
 from typing import Any, Optional
 from typing_extensions import Literal
 from inflection import underscore
-from modules.processing import StableDiffusionProcessingTxt2Img, StableDiffusionProcessingImg2Img
+from modules.processing import SdwProcessingTxt2Img, SdwProcessingImg2Img
 from modules.shared import sd_upscalers, opts, parser
 from typing import Dict, List
 
