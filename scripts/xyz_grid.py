@@ -12,7 +12,7 @@ import modules.scripts as scripts
 import gradio as gr
 
 from modules import images, sd_samplers, processing, sd_models, sd_vae, sd_samplers_kdiffusion, errors
-from modules.processing import process_images, Processed, StableDiffusionProcessingTxt2Img
+from modules.processing import process_images, Processed, SdwProcessingTxt2Img
 from modules.shared import opts, state
 import modules.shared as shared
 import modules.sd_samplers
