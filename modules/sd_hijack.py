@@ -158,7 +158,7 @@ def undo_weighted_forward(sd_model):
         pass
 
 
-class StableDiffusionModelHijack:
+class sdwModelHijack:
     fixes = None
     layers = None
     circular_enabled = False
